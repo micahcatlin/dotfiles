@@ -1,9 +1,9 @@
 #
-# Ian's screen configuration
+# Micah's screen configuration
 #
 
-# use ^T instead of ^A as the command key
-escape ^Tt
+# use ^J instead of ^A as the command key
+escape ^Jj
 
 defscrollback 2000
 autodetach on
@@ -29,11 +29,6 @@ hardstatus alwayslastline "%{k}%-w%{.kY}%n %t%{-}%+w %= %H: %l %d/%m %c"
 # (Replace the 'K' with another color or Remove the '%:' if you want to reverse the logic.)
 caption string '%?%F%:%{.K.}%?%3n %t%?%?'
 
-bind ^J focus
-bind j focus down
-bind k focus up
-bind g focus top
-bind G focus bottom
 bind E hardstatus ignore
 bind e hardstatus alwayslastline
 bind H resize 20
