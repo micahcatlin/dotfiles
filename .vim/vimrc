@@ -73,7 +73,7 @@ nnoremap <CR> za
 vnoremap <space> zf
 
 " Search for the word under the cursor in the current directory
-nmap <C-k> :!clear; ack -C "\b<cword>\b" \| less -FRX <CR>
+nmap <C-i> :!clear; ack -C "\b<cword>\b" \| less -FRX <CR>
 
 " CTRL-z is too close, plus I use it very frequently, and i want to write
 " first
@@ -311,7 +311,7 @@ let g:ctrlp_custom_ignore = '\v\~$|\.(o|swp|pyc|wav|mp3|ogg|blend)$|(^|[/\\])\.(
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_dotfiles = 0
 let g:ctrlp_switch_buffer = 0
-nmap ; :CtrlPBuffer<CR>
+nmap ; :CtrlPMixed<CR>
 
 " Powerline
 "let g:Powerline_symbols = "unicode"
@@ -421,8 +421,13 @@ highlight link markdownCode Delimiter
 highlight link markdownCodeBlock Delimiter
 highlight link markdownListMarker Todo
 
+" Section: Clang-format {{{1
+map <C-K> :pyf $HOME/opt/bin/clang-format.py<cr>
+imap <C-K> <c-o>:pyf $HOME/opt/bin/clang-format.py<cr>
+
 " Section: Load ~/.vimlocal {{{1
 "--------------------------------------------------------------------------
 
 " now load specifics to this machine
 source ~/.vimlocal
+
