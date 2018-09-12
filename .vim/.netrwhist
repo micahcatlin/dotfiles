@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/micahcatlin/src/plotfit/src'
+let g:netrw_dirhist_2='/home/micahcatlin/src/plotfit'
+let g:netrw_dirhist_3='/home/micahcatlin/src/helltool/lib/helltool/assets'
+let g:netrw_dirhist_4='/home/micahcatlin/src/helltool/lib/helltool/assets/visualizations'
+let g:netrw_dirhist_5='/home/micahcatlin/src/helltool/lib/helltool'
+let g:netrw_dirhist_6='/home/micahcatlin/src/helltool/lib'
+let g:netrw_dirhist_7='/home/micahcatlin/src/helltool'
+let g:netrw_dirhist_8='/home/micahcatlin/src/helltool/lib'
